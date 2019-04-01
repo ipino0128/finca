@@ -3,7 +3,7 @@ import React from 'react'
 class PhotosContainer extends React.Component{
   render(){
     return(
-      <div> photos 
+      <div> photos  container
       </div>
     )
   }

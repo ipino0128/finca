@@ -7,6 +7,7 @@ import AboutContainer from './AboutContainer'
 import PhotosContainer from './PhotosContainer'
 import SaleContainer from './SaleContainer'
 import ProjectsContainer from './ProjectsContainer'
+import Login from './Login'
 
 
 class App extends Component {
@@ -35,6 +36,8 @@ class App extends Component {
           <Route exact path = "/photos" render = { () => <PhotosContainer/>}/>
           <Route exact path = "/sale" render = { () => <SaleContainer/>}/>
           <Route exact path = "/projects" render = { () => <ProjectsContainer/>}/>
+          <Route exact path = "/login" render = { () => <Login/> }/>
+          
           <Route path = '/' render = {() => <HomeContainer/>}/>
       </Switch>
       </div>
