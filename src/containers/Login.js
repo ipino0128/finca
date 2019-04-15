@@ -46,66 +46,48 @@ class Login extends React.Component {
 
   render() {
     return (
+      <div className = "containerlogin" >
+        <div className = "loginpage" >
+          <Segment placeholder>
+            <Grid columns = {1}
+              relaxed = 'very'
+              stackable >
+              <Grid.Column>
+                <Form onSubmit = {this.handleLoginSubmit}>
+                    <Form.Input icon = 'user'
+                    iconPosition = 'left'
+                    label = "username"
+                    placeholder = "username"
+                    name = "username"
+                    onChange = {
+                      this.handleChange
+                    }
+                    value = {
+                      this.state.username
+                    }
+                    />
 
-      <
-      div className = "containerlogin" >
-      <
-      div className = "loginpage" >
-      <
-      Segment placeholder >
-      <
-      Grid columns = {
-        1
-      }
-      relaxed = 'very'
-      stackable >
-      <
-      Grid.Column >
-      <
-      Form onSubmit = {
-        this.handleLoginSubmit
-      } >
-      <
-      Form.Input icon = 'user'
-      iconPosition = 'left'
-      label = "username"
-      placeholder = "username"
-      name = "username"
-      onChange = {
-        this.handleChange
-      }
-      value = {
-        this.state.username
-      }
-      />
-
-      <
-      Form.Input icon = 'lock'
-      iconPosition = 'left'
-      label = "password"
-      type = "password"
-      placeholder = "password"
-      name = "password"
-      onChange = {
-        this.handleChange
-      }
-      value = {
-        this.state.password
-      }
-      />
-
-      <
-      Button color = "facebook"
-      content = 'Login' / >
-      <
-      /Form> <
-      /Grid.Column>  <
-      /Grid>
-
-       <
-      /Segment> <
-      /div> <
-      /div>
+                  <Form.Input icon = 'lock'
+                  iconPosition = 'left'
+                  label = "password"
+                  type = "password"
+                  placeholder = "password"
+                  name = "password"
+                  onChange = {
+                    this.handleChange
+                  }
+                  value = {
+                    this.state.password
+                  }
+                  />
+                  <Button color = "facebook"
+                  content = 'Login' / >
+              </Form>
+          </Grid.Column>
+        </Grid>
+      </Segment>
+    </div>
+  </div>
     );
   }
 }
